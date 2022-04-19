@@ -48,7 +48,21 @@
         &__descr {
             margin-top: 5px;
         }
+    }
+    .title {
+        &_left {
+            margin-left: 20px;
+        }
     } 
+    .consultation {
+        padding-top: 100px;
+        &__descr {
+            margin-left: 20px;
+        }
+    }
+    .feed-form {
+        margin-left: 20px;
+    }
 }
       
 @media (max-width: 575px) {
@@ -103,5 +117,34 @@
         &__descr {
             margin-top: 5px;
         }
+    }
+    .title {
+        &_left {
+            font-size: 24px;
+        }
     } 
+    .consultation {
+        padding-top: 100px;
+        &__descr {
+            font-size: 16px;
+            padding-right: 10px;
+        }
+        .feed-form {
+            align-items: center;
+            margin-left: 10px;
+            input {
+                height: 40px;
+                width: 250px;
+            }
+            
+        }
+        .button {
+            &_submit {
+                width: 250px;
+            }
+        } 
+    }
+    .xs-hidden {
+        display: none;
+    }
 }

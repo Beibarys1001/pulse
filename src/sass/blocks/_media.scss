@@ -3,7 +3,9 @@
 }
 
 @media (max-width: 991px) {
-    
+    .xs-hidden {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -62,6 +64,14 @@
     }
     .feed-form {
         margin-left: 20px;
+    }
+    .carousel {
+        img {
+            width: 70%;
+        }
+    }
+    .xs-hidden {
+        display: none;
     }
 }
       

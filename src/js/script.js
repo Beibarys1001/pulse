@@ -23,37 +23,37 @@
 // });
 
 const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    navPosition: 'bottom',
-    controlsText: [
-        '<img src="icons/left.svg">',
-        '<img src="icons/right.svg">'
-    ],
-    responsive: {
-        640: {
-          edgePadding: 20,
-          gutter: 20,
-          items: 1
-        },
-        700: {
-          gutter: 30
-        },
-        991: {
-          nav: false,
-          items: 1
+  container: '.carousel__inner',
+  items: 1,
+  slideBy: 'page',
+  autoplay: false,
+  controls: false,
+  navPosition: 'bottom',
+  controlsText: [
+      '<img src="icons/left.svg">',
+      '<img src="icons/right.svg">'
+  ],
+  responsive: {
+      640: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 1
+      },
+      700: {
+        gutter: 30
+      },
+      991: {
+        nav: false,
+        items: 1
 
-        }
       }
-  });
+    }
+});
 
 document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
+  slider.goTo('prev');
 });
 
 document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
+  slider.goTo('next');
 });

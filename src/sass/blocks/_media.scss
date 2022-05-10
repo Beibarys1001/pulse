@@ -121,9 +121,18 @@
 }
       
 @media (max-width: 575px) {
-    .feed__text {
-        padding-right: 5px;
-        margin-left: 5px;
+    .feed {
+        &__item {
+            margin-top: 20px;
+            &:nth-child(2) {
+                margin-top: 40px;
+            }
+        }
+        &__text {
+            padding-right: 5px;
+            margin-left: 5px;
+        }
+        
     }
     .header {
         a {
@@ -214,7 +223,6 @@
             }
         }
     }
-    
     .footer {
         &__info {
             width: 100%;

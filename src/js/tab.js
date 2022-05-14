@@ -44,9 +44,9 @@ $(document).ready(function(){
                     required: true,
                     minlength: 5
                 },
-                phone: 'requried',
+                phone: 'required',
                 email: {
-                    requried: true,
+                    required: true,
                     email: true
                 }
             },

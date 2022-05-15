@@ -1,17 +1,17 @@
 .consultation {
     min-height: 680px;
-    padding: 50px 0 92px 0;
+    padding: 100px 0 92px 0;
     background: url('../img/consultation.jpg') center (center/cover) no-repeat;
     &__descr {
-        font-weight: 500;
+        color: #ffffff;
         font-size: 20px;
-        color: #FFFFFF;
+        font-weight: 500;
     }
     .error {
-        border: 1px solid $main-color;
+        border: 1px solid red;
     }
     label.error {
-        color: #FFFFFF;
+        color: #fff;
         border: none;
         text-align: center;
         margin-bottom: 15px;

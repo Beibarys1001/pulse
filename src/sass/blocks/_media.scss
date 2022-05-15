@@ -98,7 +98,7 @@
     }
     .carousel {
         img {
-            width: 70%;
+            width: 100%;
         }
     }
     .xs-hidden {
@@ -110,6 +110,11 @@
             &_active {
                 justify-content: space-around;
             }
+        }
+    }
+    .carousel {
+        img {
+            width: 100%;
         }
     }
     .feed {
@@ -216,6 +221,12 @@
         }
         &__tab {
             font-size: 11px;
+            width: 110px;
+        }
+    }
+    .carousel {
+        img {
+            width: 100%;
         }
     }
     .feed {

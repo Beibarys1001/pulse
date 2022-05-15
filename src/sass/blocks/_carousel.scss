@@ -1,40 +1,75 @@
 .carousel {
     padding: 81px 0;
     &__inner {
-        position: relative;
-        width: 750px;
-        margin: 0 auto;
-    }
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
-        border: none;
-        background-color: #fff;
-        img {
+        padding: 0 60px;
+        .slick-track {
+            display: flex;
+            align-items: flex-start;
+        }
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-arrow {
+            position: absolute;
+            border: none;
+            top: 50%;
+            margin: -30px;
+            z-index: 10;
+            font-size: 0;
             width: 30px;
-            height: 50px;
+            height: 60px;
+        }
+        .slick-prev {
+            left: 0;
+            background: url('../../icons/left.svg') 0 0 / 100% no-repeat;
+        }
+        .slick-next {
+            right: 0;
+            background: url('../../icons/right.svg') 0 0 / 100% no-repeat;
+        }
+        .slick-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                list-style: none;
+                margin: 0 10px;
+            }
+            button {
+                font-size: 0;
+                width: 10px;
+                height: 10px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+            .slick-active {
+                button {
+                    background-color: transparent;
+                    border: 1px solid #000;
+                }
+            }
+            .slider-item {
+                text-align: center;
+            }
         }
     }
-    .next {
-        right: -66px;
-        left: auto;
-    }
-    .tns-item {
-        img {
-            display: block;
-            margin: 0 auto; 
-        }
-    }
-    .tns-nav {
-        text-align: center;
-        button {
-            background-color: red;
-        }
-        .tns-nav-active {
-            background-color: blue;
-        }
-    }
+    
+
 }
 
+
+// &__inner {
+//     position: relative;
+//     width: 750px;
+//     margin: 0 auto;
+// }
+// }
+// .slick-next  {
+//     right: -66px;
+//     left: auto;
+// }
+// .slick-dots {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }

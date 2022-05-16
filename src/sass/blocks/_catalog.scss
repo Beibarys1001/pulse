@@ -108,6 +108,7 @@
             font-weight: 700;
         }
         &__wrapper {
+
             display: flex;
             width: calc(200% + 40px);
         }
@@ -118,7 +119,6 @@
             transition: 0.5s all;
             &_active {
                 transform: translateX(0%);
-                margin-right: 20px;
             }
         }
         &__list {
